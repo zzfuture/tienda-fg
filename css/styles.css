@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --background: #1e1d2b;
+    --naranja: #ff702a;
+}
+
+body {
+    margin: 0px;
+    color: black;
+    background-color: var(--background);
+    font-family: 'Roboto', 'sans-serif';
+}
+.nav{
+    grid-area: nav;
+    display: flex;
+    font-size: 1.5vw;
+    color: var(--naranja);
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-link{
+    margin: 0 5px;
+}
+
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.nav-link {
+    text-decoration: none;
+    color: white;
+}
+
+
+.home-title {
+    font-size: 4.3vw;
+    color: var(--naranja);
+}
+.home img {
+    width: 20vw;
+    height: 20vw;
+}
+.about-text {
+    font-size: 28px;
+}
+.subtitle {
+    color: var(--naranja);
+    font-size: 20px;
+}
+.big {
+    font-size: 50px;
+}
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+}
+.menu{
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+}
+
+.menu .menu-imgs{
+    display: flex;
+    gap: 1vw;
+}
+.menu-imgs img {
+    width: 200px;
+    height: 200px;
+}
+.menu-bg {
+    background-color: white;
+    width: 300px;
+    height: 300px;
+}
+.button {
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px ;
+    background-color: #ff702a;
+    border-radius: 0;
+    font-size: 30px;
+}
+.home {
+    grid-area: home;
+}
+.about {
+    grid-area: about;
+}
+.menu {
+    grid-area: menu;
+}
+.services {
+    grid-area: services;
+}
+.quality {
+    grid-area: quality;
+}
+.contact {
+    grid-area: contact;
+}
+main {
+    display: grid;
+    grid-template-columns: 5vw 12.5vw 65vw 12.5vw 5vw;
+    grid-template-rows: 80px 50vh;
+    grid-template-areas: ". nav nav nav ." ". . home . ." ". . about . ." ". . menu . ."
+}
