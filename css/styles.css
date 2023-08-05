@@ -89,6 +89,12 @@ body {
     background-color: #ff702a;
 }
 
+/* Additional Feature? */
+.button:hover {
+    background-color: var(--beige);
+    transition: 0.5s;
+    color: black;
+}
 .home-img {
     padding-top: 10vw;
     height: 57vw;
@@ -435,7 +441,7 @@ main {
         font-size: 1.5vw;
     }
 }
-
+/* Algunos botones se ven en azul, esto es para ponerlos todos en blanco */
 a {
     color: white;
 }
