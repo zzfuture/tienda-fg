@@ -440,6 +440,10 @@ main {
     .contact a {
         font-size: 1.5vw;
     }
+    .contact a:hover , .contact i:hover {
+        color: var(--naranja);
+        transition: 0.7s;
+    }
 }
 /* Algunos botones se ven en azul, esto es para ponerlos todos en blanco */
 a {
