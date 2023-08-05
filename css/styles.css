@@ -8,6 +8,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 * {
@@ -265,9 +266,7 @@ main {
         display: none;
     }
 
-    html {
-        overflow-x: hidden;
-    }
+    
 
     .nav {
         display: flex;
